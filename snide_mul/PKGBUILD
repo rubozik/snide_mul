@@ -14,7 +14,6 @@ source=("git+${url}.git")
 sha256sums=('SKIP')
 
 package() {
-    cd "${srcdir}/snide_mul"
-    # Устанавливаем скрипт сразу в системную папку пакета
+    cd "${srcdir}/snide_mul/snide_mul"
     install -Dm755 snide_mul.sh "${pkgdir}/usr/bin/mul"
 }
