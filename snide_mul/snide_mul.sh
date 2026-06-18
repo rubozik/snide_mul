@@ -6,7 +6,7 @@ for cmd in nmap whois gobuster curl; do
       exit 1
    fi
 done
-# --- 1. ХАКЕРСКИЙ БАННЕР ---
+# --- 1. БАННЕР ---
 clear
 echo -e "\e[1;35m"
 echo "========================================="
