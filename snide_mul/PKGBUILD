@@ -1,0 +1,20 @@
+
+pkgname=snide-mul-git
+pkgver=2.5
+pkgrel=1
+pkgdesc="Advanced Interactive Bash Recon & Vulnerability Fuzzing Framework for Bug Bounty"
+arch=('any')
+url="https://github.com"
+license=('GPL')
+depends=('bash' 'nmap' 'whois' 'curl' 'subfinder' 'gobuster')
+makedepends=('git')
+provides=('mul')
+conflicts=('snide-mul')
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
+package() {
+    cd "${srcdir}/snide_mul"
+    # Устанавливаем скрипт сразу в системную папку пакета
+    install -Dm755 snide_mul.sh "${pkgdir}/usr/bin/mul"
+}
