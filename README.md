@@ -34,7 +34,7 @@ git clone https://github.com
 cd snide_mul
 sudo chmod +x install.sh
 sudo ./install.sh
-
+```
 ## 📝 Лицензия
 Разработано исключительно в образовательных целях и для легального Bug Bounty. Автор не несет ответственности за неправомерное использование инструмента.
 ## ⚠️ ВАЖНОЕ НАПОМИНАНИЕ (IMPORTANT)
